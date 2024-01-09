@@ -1,0 +1,61 @@
+Solid Principles
+
+
+Introduction
+When creating software, we can follow good practices to avoid issues to make our code easier to understand, robust, and maintainable. Few of these practices are often termed as principles, e.g., the SOLID principles refer to the best practices to be followed in OOD.
+
+SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin, also known as Uncle Bob, the author of Clean Code: A Handbook of Agile Software Craftsmanship.
+
+The illustration below represents the acronym for SOLID design principles.
+
+S - Single Responsibility Principles
+O - Open/Closed Principles
+L - Liskov Principle
+I - Interface Segmented Principle
+D - Dependency Inversion Management
+
+Why use SOLID principles?
+Let’s look at the possible issues below that may occur in the code if we don’t adhere to the SOLID principles.
+
+The code may become tightly coupled with several components, which makes it difficult to integrate new features or bug fixes and sometimes leads to unidentified problems.
+
+The code will be untestable, which effectively means that every change will need end-to-end testing.
+
+The code may have a lot of duplication.
+
+Fixing one issue results in additional errors.
+
+
+However, if we adhere to the SOLID principles, we are able to do the following:
+
+Reduce the tight coupling of the code, which reduces errors.
+
+Reduce the code’s complexity for future use.
+
+Produce more extensible, maintainable, and understandable software code.
+
+Produce the code that is modular, feature specific, and is extremely testable.
+
+S - Single Responsibility Principle (SRP), each class should be responsible for a single part or functionality of the system.
+
+O - Open Closed principle (OCP), software components should be open for extension but closed for modification.
+
+L - Liskov Substitution Principle (LSP), objects of a superclass should be replaceable with objects of its subclasses without breaking the system.
+
+I - Interface Segregation Principle (ISP) makes fine-grained interfaces that are client specific.
+
+D - Dependency Inversion Principle (DIP), ensures that the high-level modules are not dependent on low-level modules. In other words, one should depend upon abstraction and not concretion.
+
+
+
+Single Responsibility Principle:
+
+The Single Responsibility Principle (SRP) is perhaps the least understood of the SOLID concepts. The term was coined by Robert C. Martin who defines the SRP in the following way, "A class should have only one reason to change." This implies that any class or component in our code should only have one functionality. Everything in the class should be related to just one goal.
+
+When programmers need to add features or new behavior, they frequently integrate everything within the current class. When something needs to be changed later, due to the complexity of the code, the update process becomes extremely time consuming and tedious. The Single Responsibility Principle helps us create simple classes that perform just one task. This helps in making modifications or adding extensions to the existing code much easier.
+
+Open Closed principle (OCP):
+
+In 1988, Bertrand Meyer defined the Open Closed Principle (OCP) in the following way, “A software artifact should be open for extension but closed for modification.” This means that a system should improve easily by adding new code instead of changing the code core. This way, the core code always retains its unique identity, making it reusable.
+
+One might think of OCP as inheritance, but remember that inheritance is only one of the OCP techniques. We use the interface because it is open for extension and closed for modification. Therefore, OCP is also defined as polymorphic OCP.

@@ -1,0 +1,9 @@
+Facotry Pattern:
+
+Usecase - We have some usecases which have different implementations
+Lets say we want to send email - we can use different vendors like SES, Gmail
+Now, using SOLID principles we will be creating an abstract class having generic implementations and it will be extended by SESClient and GmailClient.
+
+In simple words, we want to create objects, but the type of class will be created at runtime based on some type of parameter.
+To simplify the object instantiation, we create a factory class which will create an object of required type using the given parameters.
+
